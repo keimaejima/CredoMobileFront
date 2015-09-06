@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -5,15 +6,16 @@
     <meta charset="UTF-8">
     <title>Untitled Document</title>
     <meta property="og:title" content="人工知能と付き合っていくために人間に必要な要素を考える">
-<meta property="og:type" content="article">
-<meta property="og:description" content="既知の一歩先へ Credo">
-<meta property="og:url" content="http://credo.asia/2015/05/29/japan-job-future-2/">
-<meta property="og:image" content="http://credo.asia/wp-content/uploads/2015/05/code-459070_640.jpg">
-<meta property="og:site_name" content="Credo">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@credo_media">
-<meta name="twitter:domain" content="credo.asia">
+    <meta property="og:type" content="article"> 
+    <meta property="og:description" content="既知の一歩先へ Credo">
+    <meta property="og:url" content="http://credo.asia/2015/05/29/japan-job-future-2/">
+    <meta property="og:image" content="http://credo.asia/wp-content/uploads/2015/05/code-459070_640.jpg">
+    <meta property="og:site_name" content="Credo">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@credo_media">
+    <meta name="twitter:domain" content="credo.asia">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="socialcount.js"></script>
 </head>
 
 <body>
@@ -59,22 +61,18 @@
     <!-- /Main -->
     <!-- Contact -->
     <div id="contact_wrapper">
-        <p>SNSボタン</p>
-        <ul class="contact">
-            <li><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-            <li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-            <li><a href="#" class="fa fa-hatebu"><span>Hatena Bookmark</span></a></li>
-            <li><a href="#" class="fa fa-line"><span>Line</span></a></li>
-        </ul>
         <ul class="buttons-icon">
-			<li><input type="submit" id="w8-red" name="w8-red" class="w8-icon red" value="F"/></li>
-			<li><input type="submit" id="w8-green" name="w8-green" class="w8-icon green" value="T"/></li>
-			<li><input type="submit" id="w8-pink" name="w8-pink" class="w8-icon pink" value="L"/></li>
-			<li><input type="submit" id="w8-d-blue" name="w8-d-blue" class="w8-icon d-blue" value="B!"/></li>
-			<li><input type="submit" id="w8-yellow" name="w8-yellow" class="w8-icon yellow" value=""/></li>
-			<li><input type="submit" id="w8-l-blue" name="w8-l-blue" class="w8-icon l-blue" value=""/></li>
-			<li><input type="submit" id="w8-violet" name="w8-violet" class="w8-icon violet" value=""/></li>
-			<li><input type="submit" id="w8-grey" name="w8-grey" class="w8-icon grey" value=""/></li>
+			<li><input type="submit" id="social-facebook" name="social-facebook" class="social-icon facebook" value="f"/></li>
+			<li>
+                <div class="arrowBox">
+                    <span><mark id="tweet"></mark></span>
+                </div>
+                <input type="submit" id="soial-twitter" name="social-twitter" class="social-icon twitter" value="T"/>
+            </li>
+			<li><input type="submit" id="social-line" name="social-line" class="social-icon line" value="L"/></li>
+			<li>
+                <input type="submit" id="social-hatena" name="social-hatena" class="social-icon hatena" value="B!"/>
+            </li>
 		</ul>
     </div>
     <div id="follow">
@@ -97,9 +95,5 @@
             Copyright © kairo incAll Rights Reserved.
         </div>
     </div>
-
-
-
 </body>
-
 </html>

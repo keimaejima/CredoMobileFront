@@ -114,23 +114,13 @@ line-height: 30px;
 	}
 
 #contact_wrapper {
-  width:90%;
-    margin: 0 auto;
+    width:90%;
+    height:auto;
+    display:table;
+    margin: 5% auto;
     position: relative;
     background: #fff;
-    text-align: center;
 }
-
-ul.contact{
-	margin:0 auto;
-	font-size:0;}
-	
-#contact_wrapper li{
-	display: inline-block;
-  font-size: 12px;
-  width: 25%;}
-  
-  
 
 #follow {
     margin: 0 auto;
@@ -145,6 +135,85 @@ ul.contact{
     background: #fff;
     text-align: center;
 }
+
+/*********************************************************************************/
+/* Social Buttons                                                                */
+/*********************************************************************************/
+
+.social-icon { 
+    transition: 0.2s all ease;
+    -moz-transition: 0.2s all ease;
+    -webkit-transition: 0.2s all ease;
+    -o-transition: 0.2s all ease;
+    -ms-transition: 0.2s all ease;
+}
+
+.social-icon {
+    color:white;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    font-size:30px;
+    width: 48px;
+    height: auto;
+}
+.social-icon:hover { 
+    opacity: 1;
+}	
+.social-icon:active {
+    color: white !important;
+    background-color: #191919 !important;
+}
+
+.social-icon.facebook { background-color: #3b5998; }
+.social-icon.twitter { background-color: #55acee; }
+.social-icon.hatena { background-color: #008fde; }
+.social-icon.line { background-color: #00c300; }
+
+ul.buttons-icon { 
+    padding:0;
+    height:auto;
+    margin:0 auto;
+    text-align:center;
+    font-size:0;
+}
+ul.buttons-icon li {
+    display:inline-block;
+    height:90px;
+}
+
+.arrowBox {
+	position: relative;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	text-align: center;
+}
+.arrowBox:after, .arrowBox:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrowBox:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #ffffff;
+	border-width: 5px;
+	margin-left: -5px;
+}
+.arrowBox:before {
+	border-color: rgba(204, 204, 204, 0);
+	border-top-color: #cccccc;
+	border-width: 6px;
+	margin-left: -6px;
+}
+
 
 /*********************************************************************************/
 /* Footer                                                                        */
