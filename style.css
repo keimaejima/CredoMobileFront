@@ -6,13 +6,30 @@
 
 /*********************************************************************************/
 
+@font-face {
+        font-family: 'Helvetica';
+        src: url('Helvetica.otf');
+    }
+
 body {
-   max-width: 480px;
-    margin: 0;
+   max-width: 520px;
+    margin:0 auto;
     padding: 0;
     background: #fff;
+    border:black;
 }
 
+a {
+text-decoration: none;
+color:black;
+}
+
+h3{
+    font-size:25px;
+    border-bottom:solid 2px #999999;
+			margin:0 auto;
+			width:90%;
+}
 
 /*********************************************************************************/
 
@@ -24,41 +41,35 @@ body {
 
 #header {
 	font-family: Helvetica;
-font-size: 25px;
-color: #000000;
-line-height: 30px;
-    background: #D8D8D8;
-border: 1px solid #979797;
+    font-size: 25px;
+    color: #000000;
+    line-height: 30px;
+    background: #fff;
 }
 
-header img {
+#header img {
     margin: 0 auto;
 	width:100%;
 	height:auto;
 }
 
 
-header h2{
+#header h2{
 	margin:0 auto;
 	width:80%;
 	line-height:120%;
 	margin-bottom:5%;
-	}
-	
-header h3{
-	margin:0 auto;
+}
+
+#info{
+    margin:0 auto;
 	width:80%;
 	font-size:20px;
 	border-bottom:solid 2px #999999;
-	}
-
+}
 
 /*********************************************************************************/
-
-
 /* Logo                                                                          */
-
-
 /*********************************************************************************/
 
 #logo {
@@ -68,24 +79,19 @@ header h3{
 
 
 /*********************************************************************************/
-
-
 /* Nav                                                                           */
+/*********************************************************************************/
+nav ul{
+    list-style:none;
+}
+
+nav {
+    border-style:none;
+}
 
 
 /*********************************************************************************/
-
-#nav {}
-
-#nav-wrapper {}
-
-
-/*********************************************************************************/
-
-
 /* Main                                                                          */
-
-
 /*********************************************************************************/
 
 #main {
@@ -93,8 +99,6 @@ header h3{
 font-size: 25px;
 color: #000000;
 line-height: 30px;
-   background: #D8D8D8;
-border: 1px solid #979797;
     margin: 0 auto;
     position: relative;
     background: #fff;
@@ -135,11 +139,6 @@ ul.contact{
     text-align: center;
 }
 
-#follow p{
-	margin:0 auto;
-			width:90%;
-  border-bottom:solid 2px #999999;}
-
 #othres{
 	margin:0 auto;
 	position: relative;
@@ -147,18 +146,8 @@ ul.contact{
     text-align: center;
 }
 
-#others p{
-	border-bottom:solid 2px #999999;
-			margin:0 auto;
-			width:90%;
-}
-
 /*********************************************************************************/
-
-
 /* Footer                                                                        */
-
-
 /*********************************************************************************/
 
 #footer {
@@ -169,15 +158,10 @@ ul.contact{
 
 
 /*********************************************************************************/
-
-
 /* Copyright                                                                     */
-
-
 /*********************************************************************************/
 
 #copyright {
-   
     position: relative;
     text-align: center;
 }
