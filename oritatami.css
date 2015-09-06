@@ -1,0 +1,79 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color:#bfbfbf;
+	font-family:arial,sans-serif;
+}
+
+
+/*全体*/
+.content{
+	width: 800px;
+	margin: 0 auto; 
+	padding: 0 auto;
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+/*
+.img_area{
+	height:150px;
+	width:200px;
+	margin-left:0 auto;
+	margin-right:0 auto;
+}
+真ん中に置く方法は？
+*/
+
+.img_area{
+ 	margin-left: 0 auto;
+ 	margin-right: 0 auto;
+}
+
+.t-img{
+	height:150px;
+	width:200px;
+}
+
+/*タイトル*/
+
+h1{
+	line-height:35px;
+	font-size:40px;
+	font-weight: bold;
+	height:35px;
+}
+
+
+/*見出し文*/
+h2{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/*もっと読むボタン*/
+.button{
+	text-align: center;
+	margin:0 auto;
+	width: 200px;
+	padding:5px;
+	border-radius: 5px;
+	background: #bfbfbf;
+	box-shadow: 0 4px 0 #7f7f7f;
+	cursor: pointer;
+
+}
+
+.button:hover{
+	opacity: 0.8;
+}
+
+
+/*本文*/
+h3{
+	margin:0px;
+	padding-top: 20px;
+	font-size: 15px;
+	font-weight: normal;
+}
