@@ -23,7 +23,8 @@
 
 body {
    max-width: 520px;
-    margin:0 auto;
+   width:100%;
+    margin:0;
     padding: 0;
     background: #fff;
     border:black;
@@ -58,6 +59,7 @@ h3{
 }
 
 #header img {
+	max-width:100%;
     margin: 0 auto;
 	width:100%;
 	height:auto;
@@ -66,7 +68,7 @@ h3{
 
 #header h2{
 	margin:0 auto;
-	width:80%;
+	width:100%;
 	line-height:120%;
 	margin-bottom:5%;
 }
@@ -125,6 +127,7 @@ background-position:left center;
 #logo {
     margin: 0 auto;
     text-align: center;
+	border-bottom:solid 2px #999999;
 }
 
 #logo h1{
@@ -302,7 +305,7 @@ li.active {
     margin:2% auto;
 }
 
-.twitter{
+.twitterfollow{
     width:50%;
     height:auto;
     margin:2% auto;
@@ -348,8 +351,9 @@ ul.buttons-icon {
     font-size:0;
 }
 ul.buttons-icon li {
+	padding:0;
     display:inline-block;
-    vertical-align: top; 
+    vertical-align:top; 
     width:20%;
 }
 
