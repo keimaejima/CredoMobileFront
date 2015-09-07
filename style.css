@@ -11,6 +11,12 @@
         src: url('Helvetica.otf');
     }
 
+@font-face {
+        font-family: 'Koruri';
+        src: url('Koruri-Regular.ttf');
+    }
+
+
 body {
    max-width: 520px;
     margin:0 auto;
@@ -65,6 +71,7 @@ h3{
     margin:0 auto;
 	width:80%;
 	font-size:20px;
+    font-family:Koruri;
 	border-bottom:solid 2px #999999;
 }
 
