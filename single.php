@@ -14,7 +14,7 @@
                     </ul>
                     <p>ここに広告</p>
                 </header>
-                <p><?php the_content ?></p>
+                <!-- <p><?php the_content(); ?></p> -->
             </section>
             <p>次のページヘ</p>
             <p>ページ番号</p>

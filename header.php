@@ -6,7 +6,7 @@
     <?php if ( is_front_page() ): ?>
       <title><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
     <?php else : ?>
-      <title><?php wp_title(''); ?> | <?php bloginfo('title'); ?></title>
+      <title><?php wp_title(''); ?> | <?php bloginfo('name'); ?></title>
     <?php endif; ?>
       <meta name="Author" content="" />
       <link rel="stylesheet" type="text/css" href="style.css">
