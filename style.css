@@ -52,6 +52,7 @@ h3{
 #header {
 	font-family: Helvetica;
     font-size: 25px;
+    width:90%;
     color: #000000;
     line-height: 30px;
     background: #fff;
@@ -389,6 +390,44 @@ ul.buttons-icon li {
 	border-width: 6px;
 	margin-left: -6px;
 }
+
+/*********************************************************************************/
+/* Related Articles                                                                */
+/*********************************************************************************/
+
+#others ul {
+    padding-left: 0px;
+    width: 90%;
+    margin: 5% auto;
+}
+
+#others li {
+    list-style: none;
+    border-bottom: 1px dotted #ddd;
+    margin: 0 2% 2% 0;
+    padding: 0 0 0px 0px;
+    width: 100%;
+    float: left;
+}
+
+#others .thum {
+    width: 50%;
+}
+
+#others img {
+    width: 50%;
+    float: left;
+    height: auto;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #ccc;
+    vertical-align: middle;
+    margin: 2%;
+}
+
+#others h4 {
+    font-size:30px;
+    margin: 0px;
+}
+
 
 
 /*********************************************************************************/
