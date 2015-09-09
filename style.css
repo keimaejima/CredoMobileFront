@@ -54,6 +54,7 @@ h3{
     width:90%;
     margin:0 auto;
     font-size: 25px;
+    width:90%;
     color: #000000;
     line-height: 30px;
     background: #fff;
@@ -502,9 +503,17 @@ ul.buttons-icon li {
 }
 
 #others h4 {
+<<<<<<< HEAD
     font-size: 100%;
     margin: 0px;
 }
+=======
+    font-size:30px;
+    margin: 0px;
+}
+
+
+>>>>>>> origin/fukasawa
 
 /*********************************************************************************/
 /* Footer                                                                        */
