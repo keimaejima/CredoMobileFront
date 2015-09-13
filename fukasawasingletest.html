@@ -17,7 +17,32 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="socialcount.js"></script>
 </head>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+   <script>
+        $(function() {
+            var count = 200;
+            $("#sentence").each (function(){
+                var thisText = $(this).text();
+                var textLength = thisText.length;
+            if (textLength > count) {
+                var showText = thisText.substring(0, count);
+                var hideText = thisText.substring(count, textLength);
+                var insertText = showText;
+                insertText += '<span class="hide">' + hideText + '</span>';
+                insertText += '<span class="omit">......</span>';
+                insertText += '<div id="button">もっと読む</div>';
+                $(this).html(insertText);
+            };
+        });
+        $('.hide').hide();
+        $('#button').click(function() {
+            $(this).hide()
+                .prev('.omit').hide("fast")
+                .prev('.hide').show(1500);
+            return false;
+       });
+    });
+    </script>
 <body>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
