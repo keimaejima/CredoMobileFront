@@ -9,8 +9,8 @@
                     <!-- <img src="http://credo.asia/wp-content/uploads/2015/05/code-459070_640.jpg"> -->
                     <h2><?php the_title(); ?></h2>
                     <ul>
+                      <li></li>
                       <li><?php the_time('Y/m/d'); ?></li>
-                      <li>日付</li>
                       <li>タグ</li>
                     </ul>
                 </a>
@@ -25,17 +25,19 @@
           <h3>最近の記事</h3>
           <hr>
           <?php /* The loop */ ?>
-          <?php while ( have_posts() ): ?>
+          <?php $items = get_posts('numberposts=4', 'offset=1') ?>
             <ul class="new_posts_loop">
-            <?php the_post(); ?>
-            <li>
-              <a class="article" href="<?php the_permalink(); ?>">
-                <img src="" alt="" />
-                <p><?php the_title(); ?></p>
-                <small><?php the_time('Y/m/d'); ?></small>
-              </a>
-            </li>
-          <?php endwhile; ?>
+            <?php foreach ($items as $post) : ?>
+
+            <?php setup_postdata($post); ?>
+              <li>
+                <a class="article" href="<?php the_permalink(); ?>">
+                  <img src="" alt="" />
+                  <p><?php the_title(); ?></p>
+                  <small><?php the_time('Y/m/d'); ?></small>
+                </a>
+              </li>
+            <?php endforeach ; ?>
           <button type="button" name="more"></button> -->
         </section>
     <!-- /New articles -->
