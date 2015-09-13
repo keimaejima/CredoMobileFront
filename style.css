@@ -7,7 +7,7 @@
 /*********************************************************************************/
 
 body {
-    border: solid 1px #000;
+   max-width: 480px;
     margin: 0;
     padding: 0;
     background: #fff;
@@ -23,12 +23,34 @@ body {
 /*********************************************************************************/
 
 #header {
-    border: solid 1px #000;
+	font-family: Helvetica;
+font-size: 25px;
+color: #000000;
+line-height: 30px;
+    background: #D8D8D8;
+border: 1px solid #979797;
 }
 
-#header img {
+header img {
     margin: 0 auto;
+	width:100%;
+	height:auto;
 }
+
+
+header h2{
+	margin:0 auto;
+	width:80%;
+	line-height:120%;
+	margin-bottom:5%;
+	}
+	
+header h3{
+	margin:0 auto;
+	width:80%;
+	font-size:20px;
+	border-bottom:solid 2px #999999;
+	}
 
 
 /*********************************************************************************/
@@ -67,37 +89,69 @@ body {
 /*********************************************************************************/
 
 #main {
-    border: solid 1px #000;
+	font-family: Helvetica;
+font-size: 25px;
+color: #000000;
+line-height: 30px;
+   background: #D8D8D8;
+border: 1px solid #979797;
     margin: 0 auto;
     position: relative;
     background: #fff;
     text-align: center;
 }
+
+#sentence {
+	font-family: Helvetica;
+	margin:0 auto;
+	width:90%;
+	text-align:left;
+	line-height:120%;
+	}
 
 #contact_wrapper {
-    border: solid 1px #000;
+  width:90%;
     margin: 0 auto;
     position: relative;
     background: #fff;
     text-align: center;
 }
+
+ul.contact{
+	margin:0 auto;
+	font-size:0;}
+	
+#contact_wrapper li{
+	display: inline-block;
+  font-size: 12px;
+  width: 25%;}
+  
+  
 
 #follow {
-    border: solid 1px #000;
     margin: 0 auto;
     position: relative;
     background: #fff;
     text-align: center;
 }
 
-#others {
-    border: solid 1px #000;
-    margin: 0 auto;
-    position: relative;
+#follow p{
+	margin:0 auto;
+			width:90%;
+  border-bottom:solid 2px #999999;}
+
+#othres{
+	margin:0 auto;
+	position: relative;
     background: #fff;
     text-align: center;
 }
 
+#others p{
+	border-bottom:solid 2px #999999;
+			margin:0 auto;
+			width:90%;
+}
 
 /*********************************************************************************/
 
@@ -108,7 +162,7 @@ body {
 /*********************************************************************************/
 
 #footer {
-    border: solid 1px #000;
+   
     position: relative;
     text-align: center;
 }
@@ -123,7 +177,7 @@ body {
 /*********************************************************************************/
 
 #copyright {
-    border: solid 2px #000;
+   
     position: relative;
     text-align: center;
 }
