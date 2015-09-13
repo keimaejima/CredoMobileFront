@@ -153,6 +153,18 @@ ul.contact{
 			width:90%;
 }
 
+#button{
+	text-align: center;
+	margin:10 0 auto 10 0 auto;
+	padding:5px;
+	width: 200px;
+	border-radius: 5px;
+	background: #bfbfbf;
+	box-shadow: 0 4px 0 #7f7f7f;
+	cursor: pointer;
+}
+
+
 /*********************************************************************************/
 
 
