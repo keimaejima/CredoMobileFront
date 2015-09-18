@@ -38,7 +38,7 @@
     <!-- /Contact -->
     <!-- other articles -->
     <div id="others">
-        <p>関連記事</p>
+      <?php related_post_output(); ?>
     </div>
     <!-- /other articles -->
 <?php get_footer(); ?>

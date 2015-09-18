@@ -7,13 +7,13 @@
               <?php the_post(); ?>
                 <a class="article" href="<?php the_permalink(); ?>">
                     <!-- <img src="http://credo.asia/wp-content/uploads/2015/05/code-459070_640.jpg"> -->
-                    <h2><?php the_title(); ?></h2>
+                </a>
+                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                     <ul>
                       <li></li>
                       <li><?php the_time('Y/m/d'); ?></li>
                       <li>タグ</li>
                     </ul>
-                </a>
             </section> -->
     <!-- Advertisement -->
         </div>
@@ -59,7 +59,10 @@
     <!-- /Contact -->
     <!-- other articles -->
     <div id="others">
-        <p>関連記事</p>
+      <p>
+        関連記事
+      </p>
+      <?php related_post_output(); ?>
     </div>
     <!-- /other articles -->
 <?php get_footer(); ?>
