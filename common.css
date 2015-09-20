@@ -58,6 +58,7 @@ h3 {
 #logo h1 {
     font-family: Scratch;
     font-size: 64px;
+    margin: 2% auto;
 }
 
 
@@ -75,6 +76,7 @@ nav ul {
 
 nav {
     border-style: none;
+    font-size: 20px;
 }
 
 
