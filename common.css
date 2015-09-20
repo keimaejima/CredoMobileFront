@@ -1,0 +1,128 @@
+/*********************************************************************************/
+
+
+/* Basic                                                                         */
+
+
+/*********************************************************************************/
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('font/Helvetica.otf');
+}
+
+@font-face {
+    font-family: 'Koruri';
+    src: url('font/Koruri-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Scratch';
+    src: url('font/Scratch Detail.otf');
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    font-size: 25px;
+    border-bottom: solid 2px #999999;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*********************************************************************************/
+
+
+/* Logo                                                                          */
+
+
+/*********************************************************************************/
+
+#logo {
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: solid 2px #999999;
+}
+
+#logo h1 {
+    font-family: Scratch;
+    font-size: 64px;
+}
+
+
+/*********************************************************************************/
+
+
+/* Nav                                                                           */
+
+
+/*********************************************************************************/
+
+nav ul {
+    list-style: none;
+}
+
+nav {
+    border-style: none;
+}
+
+
+/*********************************************************************************/
+
+
+/* Main                                                                          */
+
+
+/*********************************************************************************/
+
+#main {
+    font-family: Helvetica;
+    font-size: 25px;
+    color: #000000;
+    line-height: 30px;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+    text-align: center;
+}
+
+.container{
+}
+
+/*********************************************************************************/
+
+
+/* Footer                                                                        */
+
+
+/*********************************************************************************/
+
+#footer {
+    position: relative;
+    text-align: center;
+}
+
+
+/*********************************************************************************/
+
+
+/* Copyright                                                                     */
+
+
+/*********************************************************************************/
+
+#copyright {
+    position: relative;
+    text-align: center;
+}

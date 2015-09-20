@@ -1,0 +1,80 @@
+/*********************************************************************************/
+
+
+/* Front Page Header                                                             */
+
+
+/*********************************************************************************/
+
+#header-front {
+    font-family: Helvetica;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #000000;
+    line-height: 30px;
+    background: #fff;
+    text-align: left;
+}
+
+#header-front img {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+#info-front {
+    position: absolute;
+    left: 0px;
+    margin: 0 auto;
+    font-family: Kokuri;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    width: 100%;
+}
+
+#info-front ul {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+#info-front ul li {
+    font-size: 30px;
+    font-family: Koruri;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#info-front ul li.author {
+    padding-left: 25px;
+    background-image: url("images/fountain-pen-icon.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#info-front ul li.date {
+    padding-left: 25px;
+    background-image: url("images/clock-icon.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#info-front ul li.tag {
+    padding-left: 25px;
+    background-image: url("images/price-tag-icon.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
