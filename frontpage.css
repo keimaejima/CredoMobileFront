@@ -91,6 +91,7 @@
 #recent {
     font-family: Koruri;
     margin: 5% auto;
+    line-height: normal;
 }
 
 #recent ul {
@@ -191,6 +192,7 @@
 #popular {
     font-family: Koruri;
     margin: 5% auto;
+    line-height: normal;
 }
 
 #popular ul {
