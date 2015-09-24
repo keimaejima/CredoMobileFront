@@ -99,7 +99,7 @@
     line-height: 120%;
 }
 
-#sentence p:nth-child(n+3){
+#sentence :nth-child(n+3){
     display: none;
 }
 
@@ -130,7 +130,7 @@
     text-align: center;
 }
 
-#button{
+#button.more_read{
     text-align: center;
     margin:0 auto;
     padding:5px;
@@ -141,7 +141,7 @@
     cursor: pointer;
 }
 
-#button:hover{
+#button.more_read:hover{
     opacity: 0.7;
 }
 

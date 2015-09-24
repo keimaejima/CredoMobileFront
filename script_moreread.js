@@ -1,8 +1,8 @@
 $function(){
 	'use strict';
-   	 $('#sentence p:nth-child(2)').append('<div id="button">もっと読む</div>');
+   	 $('#sentence p:nth-child(2)').append('<div id="button.more_read">もっと読む</div>');
         	$('#button').on('click', function() {
-            		$('#button').fadeOut('fast');
+            		$('#button.more_read').fadeOut('fast');
             		$('#sentence p:nth-child(n+3)').fadeIn(1700);
         	});
     	});
