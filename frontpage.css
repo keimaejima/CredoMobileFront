@@ -10,7 +10,7 @@
     background-image: url("images/samplehead.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    font-family: Helvetica;
+    font-family: Helvetica,Arial, sans-serif;
     position: relative;
     width: 100%;
     height: 320px;
@@ -25,7 +25,7 @@
     left: 0px;
     bottom: 0px;
     margin: 0 auto;
-    font-family: Kokuri;
+    font-family: Kokuri,Arial, sans-serif;
     font-size: 14px;
     background-color: white;
     color: black;
@@ -48,7 +48,7 @@
 
 #info-front ul li {
     font-size: 16px;
-    font-family: Koruri;
+    font-family: Koruri,Arial, sans-serif;
     width: auto;
     height: auto;
     display: inline-block;
@@ -83,24 +83,24 @@
 /*********************************************************************************/
 
 
-/* Front Page Recent                                                            */
+/* Front Page Article List                                                            */
 
 
 /*********************************************************************************/
 
-#recent {
-    font-family: Koruri;
+.article_list {
+    font-family: Koruri,Arial, sans-serif;
     margin: 5% auto;
     line-height: normal;
 }
 
-#recent ul {
+.article_list ul {
     padding-left: 0px;
     width: 90%;
     margin: 5% auto;
 }
 
-#recent li {
+.article_list li {
     list-style: none;
     border-bottom: 1px dotted #ddd;
     margin: 0 2% 2% 0;
@@ -109,12 +109,12 @@
     float: left;
 }
 
-#recent .thum {
+.article_list .thum {
     width: 50%;
     float: left;
 }
 
-#recent img {
+.article_list img {
     width: 100%;
     float: left;
     height: auto;
@@ -123,22 +123,22 @@
     margin: 2%;
 }
 
-#recent .info h4 {
+.article_list .info h4 {
     font-size: 18px;
-    font-family: Kokuri;
+    font-family: Kokuri,Arial, sans-serif;
     text-align: left;
     margin: 0;
 }
 
-#recent ul li .info {
+.article_list ul li .info {
     margin-left: 20px;
-    font-family: Kokuri;
+    font-family: Kokuri,Arial, sans-serif;
     width: 40%;
     border: none;
     float: left;
 }
 
-#recent ul li .info ul {
+.article_list ul li .info ul {
     padding: 0;
     margin: 0;
     margin-top: 20px;
@@ -147,16 +147,16 @@
     height: auto;
 }
 
-#recent ul li .info ul li {
+.article_list ul li .info ul li {
     font-size: 16px;
-    font-family: Koruri;
+    font-family: Koruri,Arial, sans-serif;
     width: auto;
     height: auto;
     vertical-align: top;
     width: 100%;
 }
 
-#recent ul li .info ul li.author {
+.article_list ul li .info ul li.author {
     padding-left: 30px;
     background-image: url("images/fountain-pen-icon.png");
     background-size: 25px;
@@ -164,7 +164,7 @@
     background-position: left center;
 }
 
-#recent ul li .info ul li.date {
+.article_list ul li .info ul li.date {
     padding-left: 30px;
     background-image: url("images/clock-icon.png");
     background-size: 25px;
@@ -172,108 +172,7 @@
     background-position: left center;
 }
 
-#recent ul li .info ul li.tag {
-    padding-left: 30px;
-    background-image: url("images/price-tag-icon.png");
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: left center;
-}
-
-
-/*********************************************************************************/
-
-
-/* Front Page Popular                                                            */
-
-
-/*********************************************************************************/
-
-#popular {
-    font-family: Koruri;
-    margin: 5% auto;
-    line-height: normal;
-}
-
-#popular ul {
-    padding-left: 0px;
-    width: 90%;
-    margin: 5% auto;
-}
-
-#popular li {
-    list-style: none;
-    border-bottom: 1px dotted #ddd;
-    margin: 0 2% 2% 0;
-    padding: 0 0 0px 0px;
-    width: 100%;
-    float: left;
-}
-
-#popular .thum {
-    width: 50%;
-    float: left;
-}
-
-#popular img {
-    width: 100%;
-    float: left;
-    height: auto;
-    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #ccc;
-    vertical-align: middle;
-    margin: 2%;
-}
-
-#popular .info h4 {
-    font-size: 18px;
-    font-family: Kokuri;
-    text-align: left;
-    margin: 0;
-}
-
-#popular ul li .info {
-    margin-left: 20px;
-    font-family: Kokuri;
-    width: 40%;
-    border: none;
-    float: left;
-}
-
-#popular ul li .info ul {
-    padding: 0;
-    margin: 0;
-    margin-top: 20px;
-    text-align: left;
-    width: 100%;
-    height: auto;
-}
-
-#popular ul li .info ul li {
-    font-size: 16px;
-    font-family: Koruri;
-    width: auto;
-    height: auto;
-    vertical-align: top;
-    width: 100%;
-}
-
-#popular ul li .info ul li.author {
-    padding-left: 30px;
-    background-image: url("images/fountain-pen-icon.png");
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: left center;
-}
-
-#popular ul li .info ul li.date {
-    padding-left: 30px;
-    background-image: url("images/clock-icon.png");
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: left center;
-}
-
-#popular ul li .info ul li.tag {
+.article_list ul li .info ul li.tag {
     padding-left: 30px;
     background-image: url("images/price-tag-icon.png");
     background-size: 25px;

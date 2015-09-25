@@ -57,7 +57,7 @@ h3 {
 }
 
 #logo h1 {
-    font-family: Scratch;
+    font-family: Scratch,Arial, sans-serif;
     font-size: 64px;
     margin: 2% auto;
 }
@@ -90,7 +90,7 @@ nav {
 /*********************************************************************************/
 
 #main {
-    font-family: Helvetica;
+    font-family: Helvetica,Arial, sans-serif;
     font-size: 25px;
     color: #000000;
     line-height: 30px;
