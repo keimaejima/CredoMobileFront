@@ -1,31 +1,33 @@
 <?php get_header(); ?>
 <!-- <?php get_post(); ?> -->
     <!-- Main -->
-    <div id="main">
+    <article id="main">
         <div id="content" class="container">
-            <section class="top_post">
+            <section id="header-front">
               <?php the_post(); ?>
                 <a class="article" href="<?php the_permalink(); ?>">
                     <!-- <img src="http://credo.asia/wp-content/uploads/2015/05/code-459070_640.jpg"> -->
                 </a>
-                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <img src="http://credo.asia/wp-content/uploads/2015/05/code-459070_640.jpg">
+                <section id="info-front">
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                     <ul>
-                      <li></li>
-                      <li><?php the_time('Y/m/d'); ?></li>
-                      <li>タグ</li>
+                      <li class="author"></li>
+                      <li class="date"><?php the_time('Y/m/d'); ?></li>
+                      <li class="tag">IT・テクノロジー</li>
                     </ul>
-            </section> -->
+                </section>
     <!-- Advertisement -->
-        </div>
         <div class="advertisement">
+          <p>広告</p>
         </div>
     <!-- /Advertisement -->
     <!-- New articles -->
-        <section class="new_posts">
+        <section id="recent">
           <h3>最近の記事</h3>
           <hr>
           <?php /* The loop */ ?>
-          <?php $items = get_posts('numberposts=4', 'offset=1') ?>
+            <?php $items = get_posts('numberposts=4', 'offset=1') ?>
             <ul class="new_posts_loop">
             <?php foreach ($items as $post) : ?>
 
@@ -41,7 +43,11 @@
           <button type="button" name="more"></button> -->
         </section>
     <!-- /New articles -->
+        <section id="popular">
+          <p>人気記事</p>
+        </section>
     </div>
+  </article>
     <!-- /Main -->
     <!-- Contact -->
     <div id="contact_wrapper">

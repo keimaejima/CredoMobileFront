@@ -3,9 +3,7 @@
 <!-- /Footer -->
 <!-- Copyright -->
 <div id="copyright">
-    <div class="container">
         Copyright © kairo incAll Rights Reserved.
-    </div>
 </div>
 
 
