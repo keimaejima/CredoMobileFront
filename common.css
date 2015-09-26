@@ -14,30 +14,40 @@ Version: 1.0
 
 /*********************************************************************************/
 
+@font-face {
+    font-family: 'Helvetica';
+    src: url('font/Helvetica.otf');
+}
+
+@font-face {
+    font-family: 'Koruri';
+    src: url('font/Koruri-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Scratch';
+    src: url('font/Scratch Detail.otf');
+}
+
 body {
-    border: solid 1px #000;
+    width: 100%;
     margin: 0;
     padding: 0;
     background: #fff;
+    border: black;
 }
 
-
-/*********************************************************************************/
-
-
-/* Header                                                                        */
-
-
-/*********************************************************************************/
-
-#header {
-    border: solid 1px #000;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-#header img {
+h3 {
+    font-size: 25px;
+    border-bottom: solid 2px #999999;
     margin: 0 auto;
+    width: 90%;
 }
-
 
 /*********************************************************************************/
 
@@ -50,6 +60,12 @@ body {
 #logo {
     margin: 0 auto;
     text-align: center;
+    border-bottom: solid 2px #999999;
+}
+
+#logo h1 {
+    font-family: Scratch;
+    font-size: 64px;
 }
 
 
@@ -61,9 +77,13 @@ body {
 
 /*********************************************************************************/
 
-#nav {}
+nav ul {
+    list-style: none;
+}
 
-#nav-wrapper {}
+nav {
+    border-style: none;
+}
 
 
 /*********************************************************************************/
@@ -75,37 +95,18 @@ body {
 /*********************************************************************************/
 
 #main {
-    border: solid 1px #000;
+    font-family: Helvetica;
+    font-size: 25px;
+    color: #000000;
+    line-height: 30px;
     margin: 0 auto;
     position: relative;
     background: #fff;
     text-align: center;
 }
 
-#contact_wrapper {
-    border: solid 1px #000;
-    margin: 0 auto;
-    position: relative;
-    background: #fff;
-    text-align: center;
+.container{
 }
-
-#follow {
-    border: solid 1px #000;
-    margin: 0 auto;
-    position: relative;
-    background: #fff;
-    text-align: center;
-}
-
-#others {
-    border: solid 1px #000;
-    margin: 0 auto;
-    position: relative;
-    background: #fff;
-    text-align: center;
-}
-
 
 /*********************************************************************************/
 
@@ -116,7 +117,6 @@ body {
 /*********************************************************************************/
 
 #footer {
-    border: solid 1px #000;
     position: relative;
     text-align: center;
 }
@@ -131,7 +131,6 @@ body {
 /*********************************************************************************/
 
 #copyright {
-    border: solid 2px #000;
     position: relative;
     text-align: center;
 }
