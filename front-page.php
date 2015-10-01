@@ -123,7 +123,7 @@
                             <ul>
                                 <li class="author">Sony Computer Entertainment</li>
                                 <li class="date">2014/02/22</li>
-                                <li class="tag">IT・テクノロジー</li>
+                                <li class="tag">うんこ</li>
                             </ul>
                         </div>
                     </li>
