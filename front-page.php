@@ -11,9 +11,9 @@
                     <section id="info-front">
                         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                         <ul>
-                          <li class="author"></li>
+                          <li class="author"><?php the_author(); ?></li>
                           <li class="date"><?php the_time('Y/m/d'); ?></li>
-                          <li class="tag">IT・テクノロジー</li>
+                          <li class="tag"><?php the_tags(); ?></li>
                         </ul>
                     </section>
         <!-- Advertisement -->
@@ -150,9 +150,6 @@
     <!-- /Contact -->
     <!-- other articles -->
     <div id="others">
-      <p>
-        関連記事
-      </p>
       <?php related_post_output(); ?>
     </div>
     <!-- /other articles -->
