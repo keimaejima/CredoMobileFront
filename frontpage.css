@@ -179,3 +179,22 @@
     background-repeat: no-repeat;
     background-position: left center;
 }
+
+#recent :nth-child(n+5){
+    display: none;
+} 
+
+#fr_moreread_button {
+    text-align: center;
+    margin:0 auto;
+    padding:5px;
+    width: 200px;
+    border-radius: 5px;
+    background: #bfbfbf;
+    box-shadow: 0 4px 0 #7f7f7f;
+    cursor: pointer;
+}
+
+#fr_moreread_button:hover {
+    opacity: 0.7;
+}
