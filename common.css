@@ -127,6 +127,7 @@ h3 {
 }
 
 .navigation-contents.open {
+    height: 100%;
     position: relative;
     position: fixed;
     opacity: 1;
