@@ -98,6 +98,11 @@
     line-height: 120%;
 }
 
+#sentence :nth-child(n+3){
+    display: none;
+}
+
+
 #contact_wrapper {
     font-family: Koruri,Arial, sans-serif;
     width: 90%;
@@ -124,6 +129,21 @@
     position: relative;
     background: #fff;
     text-align: center;
+}
+
+#button.more_read{
+    text-align: center;
+    margin:0 auto;
+    padding:5px;
+    width: 200px;
+    border-radius: 5px;
+    background: #bfbfbf;
+    box-shadow: 0 4px 0 #7f7f7f;
+    cursor: pointer;
+}
+
+#button.more_read:hover{
+    opacity: 0.7;
 }
 
 
@@ -423,6 +443,18 @@ ul.buttons-icon li {
     width: 100%;
 }
 
+<<<<<<< HEAD
+#button{
+	text-align: center;
+	margin:10 0 auto 10 0 auto;
+	padding:5px;
+	width: 200px;
+	border-radius: 5px;
+	background: #bfbfbf;
+	box-shadow: 0 4px 0 #7f7f7f;
+	cursor: pointer;
+}
+=======
 #others ul li .info ul li.author {
     padding-left: 30px;
     background-image: url("images/fountain-pen-icon.png");
@@ -466,3 +498,4 @@ ul.buttons-icon li {
     box-shadow: 0 4px 0 #7f7f7f;
     cursor: pointer;
 }
+>>>>>>> 85d3436ab04c2d13888fe65bde98590db2640187
