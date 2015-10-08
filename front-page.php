@@ -13,7 +13,7 @@
                         <ul>
                           <li class="author"><?php the_author(); ?></li>
                           <li class="date"><?php the_time('Y/m/d'); ?></li>
-                          <li class="tag">うんち</li>
+                          <li class="tag"><?php the_tags(); ?></li>
                         </ul>
                     </section>
         <!-- Advertisement -->
@@ -123,7 +123,7 @@
                             <ul>
                                 <li class="author">Sony Computer Entertainment</li>
                                 <li class="date">2014/02/22</li>
-                                <li class="tag">IT・テクノロジー</li>
+                                <li class="tag">うんこ</li>
                             </ul>
                         </div>
                     </li>
