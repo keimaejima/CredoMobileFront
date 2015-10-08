@@ -13,7 +13,7 @@
                         <ul>
                           <li class="author"><?php the_author(); ?></li>
                           <li class="date"><?php the_time('Y/m/d'); ?></li>
-                          <li class="tag">うんち</li>
+                          <li class="tag"><?php the_tags(); ?></li>
                         </ul>
                     </section>
         <!-- Advertisement -->
