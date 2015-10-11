@@ -1,0 +1,249 @@
+/*********************************************************************************/
+
+
+/* Basic                                                                         */
+
+
+/*********************************************************************************/
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('font/Helvetica.otf');
+}
+
+@font-face {
+    font-family: 'Koruri';
+    src: url('font/Koruri-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Scratch';
+    src: url('font/Scratch Detail.otf');
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    font-size: 25px;
+    border-bottom: solid 2px #999999;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+/*********************************************************************************/
+
+
+/* Logo                                                                          */
+
+
+/*********************************************************************************/
+
+#logo {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: solid 2px #999999;
+}
+
+#logo h1 {
+    font-family: Scratch, Arial, sans-serif;
+    font-size: 64px;
+    margin: 2% auto;
+}
+
+
+/*********************************************************************************/
+
+
+/* Nav                                                                           */
+
+
+/*********************************************************************************/
+
+.navigation-contents segment menu ul {
+    list-style: none;
+}
+
+.navigation-contents segment menu {
+    border-style: none;
+    font-size: 20px;
+}
+
+.hb-navigation {
+    position: absolute;
+    vertical-align: middle;
+    top: 20px;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    \ background: none;
+    cursor: pointer;
+}
+
+.hb-navigation .button {
+    position: relative;
+    font-size: 14px;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    z-index: 9999;
+}
+
+.hb-navigation .action.button {
+    position: relative;
+    position: fixed;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.navigation-contents {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .75);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    z-index: 9998;
+}
+
+.navigation-contents.open {
+    height: 100%;
+    position: relative;
+    position: fixed;
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
+
+.segment {
+    position: absolute;
+    background: rgba(0, 0, 0, .75);
+}
+
+.segment.menu p {
+    font-size: 36px;
+    font-weight: 100;
+    padding: 0;
+}
+
+.segment.menu p a {
+    color: #fff;
+    padding: 0;
+    border-bottom: dotted 1px #fff;
+}
+
+@media (max-width:767px) {
+    .segment.menu p {
+        font-size: 36px;
+        padding: 0;
+    }
+    .segment.menu p a {
+        color: #fff;
+        padding: 0;
+        border-bottom: dotted 1px #fff;
+    }
+}
+
+segment {
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+segment.close {
+    font-weight: 100;
+    transform: scale(.85, .85);
+    -webkit-transform: scale(.85, .85);
+}
+
+
+/*********************************************************************************/
+
+
+/* Main                                                                          */
+
+
+/*********************************************************************************/
+
+#main {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: #000000;
+    line-height: 30px;
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+    text-align: center;
+}
+
+.container {}
+
+
+/*********************************************************************************/
+
+
+/* Footer                                                                        */
+
+
+/*********************************************************************************/
+
+#footer {
+    position: relative;
+    text-align: center;
+}
+
+
+/*********************************************************************************/
+
+
+/* Copyright                                                                     */
+
+
+/*********************************************************************************/
+
+#copyright {
+    position: relative;
+    text-align: center;
+}
+
+
+/*********************************************************************************/
+
+
+/* clearfix                                                                     */
+
+
+/*********************************************************************************/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
