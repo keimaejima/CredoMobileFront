@@ -1,6 +1,13 @@
 <?php
-  // function add_theme_support('post-thumbnails');
 
+  add_action( 'wp_enqueue_scripts', 'my_script_output');
+  function my_script_output() {
+    wp_enqueue_script( 'jquery' );
+  }
+  add_action( 'wp_enqueue_scripts', 'my_script_output2');
+  function my_script_output2() {
+    wp_enqueue_script( 'my-script', "http://tomorrowgaarusa.frenchkiss.jp/hottocafemichikusa/wp-content/themes/CredoMobileFront/navbutton.js", array( 'jquery') );
+}
   function related_post_output(){
     global $post;
     $tags = wp_get_post_tags($post->ID);
@@ -18,14 +25,29 @@
       $related_posts = get_posts( $args );
       if ($related_posts ) :
 ?>
-  <nav role="navigation" class="mod-navRelation">
-    <h2 class="mod-navRelation-heading">関連記事</h2>
-    <ul class="mod-navRelation-list">
+  <section id="popular" class="article_list">
+    <h2 class="article_list_heading">関連記事</h2>
+    <ul class="article_list_ul">
 <?php
     foreach ( $related_posts as $post ) :
       setup_postdata($post);
 ?>
-      <li><a href="<?php the_permalink() ; ?>"><?php the_title(); ?></a></li>
+
+<li>
+    <span class="thum">
+    <img src="/hottocafemichikusa/wp-content/themes/CredoMobileFront/images/github-mark@1200x630.png">
+</span>
+    <a href="<?php the_permalink(); ?>">
+      <div class="info">
+        <h4><?php the_title(); ?></h4>
+        <ul>
+          <li class="author"><?php the_author(); ?></li>
+          <li class="date"><?php the_time('Y/m/d'); ?></li>
+          <li class="tag"><?php the_tags(); ?></li>
+        </ul>
+    </div></a>
+</li>
+
 <?php endforeach;
     wp_reset_postdata();
 ?>

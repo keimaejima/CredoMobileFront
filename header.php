@@ -9,7 +9,7 @@
       <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
     <?php endif; ?>
     <meta name="Author" content="" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/hottocafemichikusa/wp-content/themes/CredoMobileFront/style.css">
     <meta property="og:title" content="人工知能と付き合っていくために人間に必要な要素を考える">
     <meta property="og:type" content="article">
     <meta property="og:description" content="既知の一歩先へ Credo">
@@ -20,40 +20,8 @@
     <meta name="twitter:site" content="@credo_media">
     <meta name="twitter:domain" content="credo.asia">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="common.css">
-    <link rel="stylesheet" type="text/css" href="singlepage.css">
-    <script src="socialcount.js"></script>
-    <?php wp_head(); ?>
-</head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script>
-    $(function () {
-        var count = 200;
-        $("#sentence").each(function () {
-            var thisText = $(this).text();
-            var textLength = thisText.length;
-            if (textLength > count) {
-                var showText = thisText.substring(0, count);
-                var hideText = thisText.substring(count, textLength);
-                var insertText = showText;
-                insertText += '<span class="hide">' + hideText + '</span>';
-                insertText += '<span class="omit">......</span>';
-                insertText += '<div id="button">もっと読む</div>';
-                $(this).html(insertText);
-            };
-        });
-        $('.hide').hide();
-        $('#button').click(function () {
-            $(this).hide()
-                .prev('.omit').hide("fast")
-                .prev('.hide').show(1500);
-            return false;
-        });
-    });
-</script>
+	<?php wp_head(); ?>
 
-<body>
-    <div id="fb-root"></div>
     <script>
         (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
@@ -64,17 +32,28 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+
+
+</head>
+
+
+<body>
+    <div id="fb-root"></div>
+
     <!-- Header -->
     <header id="header">
-        <!-- Nav -->
-        <nav id="nav">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Politics</a></li>
-                <li><a href="">Economy</a></li>
-                <li><a href="">Science</a></li>
-            </ul>
-        </nav>
+      <!-- Nav -->
+      <div class="hb-navigation">
+          <div class="button">MENU</div>
+      </div>
+      <nav class="navigation-contents segment menu">
+          <p><a href="">Politics</a></p>
+          <p><a href="">Economy</a></p>
+          <p><a href="">Society</a></p>
+          <p><a href="">Culture & Art</a></p>
+          <p><a href="">IT & Technology</a></p>
+          <p><a href="">Movie</a></p>
+      </nav>
         <!-- Logo -->
         <div id="logo">
             <h1><a href="http://credo.asia">CREDO</a></h1>
