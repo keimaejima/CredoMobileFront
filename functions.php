@@ -1,5 +1,8 @@
 <?php
 
+  add_theme_support('post-thumbnails');
+  set_post_thumbnail_size(160, 120, true);
+
   add_action( 'wp_enqueue_scripts', 'my_script_output');
   function my_script_output() {
     wp_enqueue_script( 'jquery' );
