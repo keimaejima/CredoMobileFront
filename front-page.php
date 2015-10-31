@@ -55,7 +55,7 @@
                     <button type="button" name="more"></button>
                     </div>
                   <div class="cf"></div>
-                  <div class="button">もっと読む</div>
+                  <div class="button">もっと見る</div>
               </section>
               <!-- /New articles -->
             <!-- Popular articles -->

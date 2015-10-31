@@ -31,7 +31,7 @@
                           </ul>
                         </div>
                 </div>
-              </article>
+
             <!-- whileを終了し、投稿がないなら以下を表示 -->
             <?php endwhile; else: ?>
                 <p>記事が見つかりませんでした。</p>
@@ -74,15 +74,14 @@
         </div>
     </section>
     <!-- /Contact -->
-        <!-- Related Articles -->
-            <?php related_post_output(); ?>
         <div class="cf"></div>
           <p>広告</p>
             <div class="fb-page" data-href="https://www.facebook.com/Credo-588011671280566/timeline/" data-width="100%" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
-    </article>
-    <!-- other articles -->
-    <!-- <div id="others"> -->
-      <!-- <?php related_post_output(); ?> -->
-    <!-- </div> -->
-    <!-- /other articles -->
+            <!-- other articles -->
+
+              <?php related_post_output(); ?>
+
+            <!-- /other articles -->
+</article>
+
 <?php get_footer(); ?>

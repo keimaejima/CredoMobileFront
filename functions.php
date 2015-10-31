@@ -29,7 +29,7 @@
       if ($related_posts ) :
 ?>
   <section id="popular" class="article_list">
-    <h2 class="article_list_heading">関連記事</h2>
+    <h3 class="article_list_heading">関連記事</h3>
     <ul class="article_list_ul">
 <?php
     foreach ( $related_posts as $post ) :
@@ -38,19 +38,19 @@
 
 <li>
     <span class="thum">
+          <a href="<?php the_permalink(); ?>">
       <?php
-if(is_home()) {
 if(has_post_thumbnail()) {
 the_post_thumbnail();
 } else {
 echo '<img src="'.get_template_directory_uri().'/images/no_image.JPG" width="160" height="120"/>';
 }
-} ?>
+?>
 </span>
-    <a href="<?php the_permalink(); ?>">
+</a>
       <div class="info">
         <h4>
-<a href="#" title="">G<?php the_title(); ?></a>
+<a href="#" title=""><?php the_title(); ?></a>
 </h4>
         <ul>
           <li class="author"><?php the_author(); ?></li>
@@ -64,7 +64,6 @@ echo '<img src="'.get_template_directory_uri().'/images/no_image.JPG" width="160
     wp_reset_postdata();
 ?>
     </ul>
-  </nav>
 <?php
   else :
     // no posts
