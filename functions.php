@@ -38,11 +38,20 @@
 
 <li>
     <span class="thum">
-    <img src="/hottocafemichikusa/wp-content/themes/CredoMobileFront/images/github-mark@1200x630.png">
+      <?php
+if(is_home()) {
+if(has_post_thumbnail()) {
+the_post_thumbnail();
+} else {
+echo '<img src="'.get_template_directory_uri().'/images/no_image.JPG" width="160" height="120"/>';
+}
+} ?>
 </span>
     <a href="<?php the_permalink(); ?>">
       <div class="info">
-        <h4><?php the_title(); ?></h4>
+        <h4>
+<a href="#" title="">G<?php the_title(); ?></a>
+</h4>
         <ul>
           <li class="author"><?php the_author(); ?></li>
           <li class="date"><?php the_time('Y/m/d'); ?></li>
