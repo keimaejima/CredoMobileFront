@@ -3,11 +3,11 @@
     <!-- Main -->
     <article id="main">
         <div id="content" class="container">
-            <a href="http://credo.asia/2015/05/29/japan-job-future-2/">
+            <a href="<?php the_permalink(); ?>">
                 <section id="header-front">
                   <?php the_post(); ?>
                     <section id="info-front">
-                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        <h3><?php the_title(); ?></h3>
                         <ul>
                           <li class="author"><?php the_author(); ?></li>
                           <li class="date"><?php the_time('Y/m/d'); ?></li>
@@ -24,7 +24,7 @@
                 <h3>最新の記事</h3>
                 <hr>
                 <?php /* The loop */ ?>
-                  <?php $items = get_posts('numberposts=4', 'offset=1') ?>
+                  <?php $items = get_posts('numberposts=5', 'offset=1') ?>
                 <ul class="new_posts_loop">
                   <?php foreach ($items as $post) : ?>
 
@@ -55,7 +55,7 @@
                     <button type="button" name="more"></button>
                     </div>
                   <div class="cf"></div>
-                  <div class="button">もっと見る</div>
+                  <div class="button">もっと読む</div>
               </section>
               <!-- /New articles -->
             <!-- Popular articles -->
