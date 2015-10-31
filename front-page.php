@@ -24,8 +24,15 @@
                 <h3>最新の記事</h3>
                 <hr>
                         <span class="thum">
-                    <a href="http://github.com" title="">
-                        <img src="/hottocafemichikusa/wp-content/themes/CredoMobileFront/images/github-mark@1200x630.png">
+                    <a href="<?php the_permalink(); ?>" title="">
+                      <?php
+         if(is_home()) {
+             if(has_post_thumbnail()) {
+                 the_post_thumbnail();
+             } else {
+                 echo '<img src="'.get_template_directory_uri().'/images/no_image.jpg" width="160" height="120"/>';
+             }
+         } ?>
                     </a>
                 </span>
                 <div class="info">
@@ -93,9 +100,16 @@
                     </li>
                     <li>
                         <span class="thum">
-                    <a href="http://github.com" title="">
-                        <img src="/hottocafemichikusa/wp-content/themes/CredoMobileFront/images/c2a18fae.png">
-                    </a>
+                          <a href="http://github.com" title="">
+                          <?php
+             if(is_home()) {
+                 if(has_post_thumbnail()) {
+                     the_post_thumbnail();
+                 } else {
+                     echo '<img src="'.get_template_directory_uri().'/images/no_image.jpg" width="160" height="120"/>';
+                 }
+             } ?>
+             </a>
                 </span>
                         <div class="info">
                             <h4>
