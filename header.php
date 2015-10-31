@@ -21,25 +21,47 @@
     <meta name="twitter:domain" content="credo.asia">
     <meta name="viewport" content="width=device-width">
 	<?php wp_head(); ?>
-
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.4";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-
 </head>
 
+<script>
+    jQuery(function () {
+        var count = 200;
+        jQuery("#sentence").each(function () {
+            var thisText = jQuery(this).text();
+            var textLength = thisText.length;
+            if (textLength > count) {
+                var showText = thisText.substring(0, count);
+                var hideText = thisText.substring(count, textLength);
+                var insertText = showText;
+                insertText += '<span class="hide">' + hideText + '</span>';
+                insertText += '<span class="omit">......</span>';
+                insertText += '<div id="button">もっと読む</div>';
+                jQuery(this).html(insertText);
+            };
+        });
+        jQuery('.hide').hide();
+        jQuery('#button').click(function () {
+            jQuery(this).hide()
+                .prev('.omit').hide("fast")
+                .prev('.hide').show(1500);
+            return false;
+        });
+    });
+</script>
 
 <body>
     <div id="fb-root"></div>
 
+        <script>
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&version=v2.4";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
     <!-- Header -->
     <header id="header">
       <!-- Nav -->
