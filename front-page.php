@@ -23,26 +23,31 @@
             <section id="recent" class="article_list">
                 <h3>最新の記事</h3>
                 <hr>
-                        <span class="thum">
-                    <a href="http://github.com" title="">
-                        <img src="/hottocafemichikusa/wp-content/themes/CredoMobileFront/images/github-mark@1200x630.png">
+                <?php /* The loop */ ?>
+                  <?php $items = get_posts('numberposts=4', 'offset=1') ?>
+                <ul class="new_posts_loop">
+                  <?php foreach ($items as $post) : ?>
+
+                  <?php setup_postdata($post); ?>
+                  <li>
+                    <span class="thum">
+                    <a href="<?php the_permalink(); ?>" title="">
+                      <?php
+         if(is_home()) {
+             if(has_post_thumbnail()) {
+                 the_post_thumbnail();
+             } else {
+                 echo '<img src="'.get_template_directory_uri().'/images/no_image.JPG" width="160" height="120"/>';
+             }
+         } ?>
                     </a>
                 </span>
                 <div class="info">
-                    <?php /* The loop */ ?>
-                      <?php $items = get_posts('numberposts=4', 'offset=1') ?>
-                      <ul class="new_posts_loop">
-                      <?php foreach ($items as $post) : ?>
-
-                      <?php setup_postdata($post); ?>
-                        <li>
-                          <a class="article" href="<?php the_permalink(); ?>">
-                            <img src="/hottocafemichikusa/wp-content/themes/CredoMobileFront/images/github-mark@1200x630.png" alt="">
-                            <p><?php the_title(); ?></p>
+                  <h4><a href='#' title=""><?php the_title(); ?></a></h4>
                             <ul>
-                              <li class="author">ふかざわ</li>
+                              <li class="author"><?php the_author(); ?></li>
                               <li class="date"><?php the_time('Y/m/d'); ?></li>
-                              <li class="tag">IT・テクノロジー</li>
+                              <li class="tag"><?php the_tags(); ?></li>
                             </ul>
                           </a>
                         </li>
@@ -93,9 +98,16 @@
                     </li>
                     <li>
                         <span class="thum">
-                    <a href="http://github.com" title="">
-                        <img src="/hottocafemichikusa/wp-content/themes/CredoMobileFront/images/c2a18fae.png">
-                    </a>
+                          <a href="http://github.com" title="">
+                          <?php
+             if(is_home()) {
+                 if(has_post_thumbnail()) {
+                     the_post_thumbnail();
+                 } else {
+                     echo '<img src="'.get_template_directory_uri().'/images/no_image.jpg" width="160" height="120"/>';
+                 }
+             } ?>
+             </a>
                 </span>
                         <div class="info">
                             <h4>
