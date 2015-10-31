@@ -21,7 +21,7 @@
     <!-- /Advertisement -->
     <!-- New articles -->
     <section id="recent" class="article_list">
-      <h3>最新の記事</h3>
+      <h3>最新の記事ぴよよよよよよよよy</h3>
       <hr>
       <?php /* The loop */ ?>
       <?php $items = get_posts('numberposts=5', 'offset=1') ?>
