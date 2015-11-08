@@ -11,6 +11,7 @@ add_action( 'wp_enqueue_scripts', 'my_script_output2');
 function my_script_output2() {
   wp_enqueue_script( 'my-script', "http://tomorrowgaarusa.frenchkiss.jp/hottocafemichikusa/wp-content/themes/CredoMobileFront/navbutton.js", array( 'jquery') );
 }
+
 function related_post_output(){
   global $post;
   $tags = wp_get_post_tags($post->ID);

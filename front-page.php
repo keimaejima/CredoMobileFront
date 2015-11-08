@@ -4,13 +4,13 @@
 <article id="main">
   <div id="content" class="container">
     <a href="<?php the_permalink(); ?>">
-      <section id="header-front">
+      <section id="header-front" style="">
         <?php the_post(); ?>
         <section id="info-front">
           <h3><?php the_title(); ?></h3>
           <ul>
             <li class="author"><?php the_author(); ?></li>
-            <li class="date"><?php the_time('Y/m/d'); ?></li>
+            <li class="date"><?php  ('Y/m/d'); ?></li>
             <li class="tag"><?php the_tags(); ?></li>
           </ul>
         </section>
@@ -27,7 +27,6 @@
       <?php $items = get_posts('numberposts=5', 'offset=1') ?>
       <ul class="new_posts_loop">
         <?php foreach ($items as $post) : ?>
-
           <?php setup_postdata($post); ?>
           <li>
             <span class="thum">
@@ -146,19 +145,7 @@
   <div class="fb-page" data-href="https://www.facebook.com/Credo-588011671280566/timeline/" data-width="100%" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
 </article>
 
-<!-- Contact -->
-<div id="contact_wrapper">
-  <p>SNSボタン</p>
-  <ul class="contact">
-    <li><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-    <li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-    <li><a href="#" class="fa fa-hatebu"><span>Hatena Bookmark</span></a></li>
-    <li><a href="#" class="fa fa-line"><span>Line</span></a></li>
-  </ul>
-</div>
-<div id="follow">
-  <p>ここにFacebook,twitterフォローボタン</p>
-</div>
+
 <!-- /Contact -->
 <!-- other articles -->
 <!-- <div id="others"> -->

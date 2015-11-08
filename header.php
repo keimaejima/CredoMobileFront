@@ -69,12 +69,22 @@
           <div class="button">MENU</div>
       </div>
       <nav class="navigation-contents segment menu">
-          <p><a href="">Politics</a></p>
-          <p><a href="">Economy</a></p>
+      <?php
+        $cat = get_categories();
+        $catcount = count($cat);
+        $i = 0 ;
+        while ($i < $catcount) :
+          $cat_id = $cat[$i]->cat_ID;
+          $link = get_category_link($cat_id);
+      ?>
+          <p><a href="<?php echo $link; ?>"><?php echo get_cat_name($cat_id); ?></a></p>
+          <?php $i++; endwhile; ?>
+          <!-- <p><a href="">Economy</a></p>
           <p><a href="">Society</a></p>
           <p><a href="">Culture & Art</a></p>
           <p><a href="">IT & Technology</a></p>
-          <p><a href="">Movie</a></p>
+          <p><a href="">Movie</a></p> -->
+      </nav>
       </nav>
         <!-- Logo -->
         <div id="logo">
