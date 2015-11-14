@@ -6,10 +6,9 @@ set_post_thumbnail_size(160, 120, true);
 add_action( 'wp_enqueue_scripts', 'my_script_output');
 function my_script_output() {
   wp_enqueue_script( 'jquery' );
-}
-add_action( 'wp_enqueue_scripts', 'my_script_output2');
-function my_script_output2() {
   wp_enqueue_script( 'my-script', "http://tomorrowgaarusa.frenchkiss.jp/hottocafemichikusa/wp-content/themes/CredoMobileFront/navbutton.js", array( 'jquery') );
+  wp_enqueue_script( 'my-script_1', "http://tomorrowgaarusa.frenchkiss.jp/hottocafemichikusa/wp-content/themes/CredoMobileFront/single_moreread_script.js", array( 'jquery') );
+  wp_enqueue_script( 'my-script_2', "http://tomorrowgaarusa.frenchkiss.jp/hottocafemichikusa/wp-content/themes/CredoMobileFront/fr_moreread_script.js", array( 'jquery') );
 }
 
 function related_post_output(){

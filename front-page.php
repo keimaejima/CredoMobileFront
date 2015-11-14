@@ -24,7 +24,7 @@
       <h3>最新の記事ぴよよよよよよよよy</h3>
       <hr>
       <?php /* The loop */ ?>
-      <?php $items = get_posts('numberposts=5', 'offset=1') ?>
+      <?php $items = get_posts('numberposts=10', 'offset=1') ?>
       <ul class="new_posts_loop">
         <?php foreach ($items as $post) : ?>
           <?php setup_postdata($post); ?>
@@ -48,13 +48,12 @@
                 <li class="date"><?php the_time('Y/m/d'); ?></li>
                 <li class="tag"><?php the_tags(); ?></li>
               </ul>
-            </a>
-          </li>
-        <?php endforeach ; ?>
-        <button type="button" name="more"></button>
-      </div>
-      <div class="cf"></div>
-      <div class="button">もっと読む</div>
+            </div>
+          </a>
+        </li>
+      <?php endforeach ; ?>
+      <div class="cf">ちんこ</div>
+      <div class="fr_btn">もっと記事をみる。</div>
     </section>
     <!-- /New articles -->
     <!-- Popular articles -->

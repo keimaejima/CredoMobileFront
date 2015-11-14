@@ -440,21 +440,26 @@ segment.close {
     background-position: left center;
 }
 
+#recent li:nth-child(n+7){
+    display: none;
+}
 
-Skip to content
-This repository
-Pull requests
-Issues
-Gist
- @tomorrowgaarusa
- Watch 2
-  Star 0
-  Fork 3 keimaejima/CredoMobileFront
- Branch: master  CredoMobileFront/singlepage.css
-3d18885  on Sep 25
-@fufufukakaka fufufukakaka idやclassについて整理を行いました
-1 contributor
-RawBlameHistory     468 lines (381 sloc)  8.82 KB
+.article_list .fr_btn {
+    text-align: center;
+    margin:0 auto;
+    padding:5px;
+    width: 200px;
+    border-radius: 5px;
+    background: #bfbfbf;
+    box-shadow: 0 4px 0 #7f7f7f;
+    cursor: pointer;
+}
+
+.article_list .fr_btn:hover {
+    opacity: 0.7;
+}
+
+
 /*********************************************************************************/
 
 
