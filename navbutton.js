@@ -4,9 +4,9 @@ jQuery(function () {
         jQuery(this).toggleClass('action');
         jQuery('.navigation-contents').toggleClass('open');
         jQuery('segment').toggleClass('close');
-jQuery(document).ready(function(){
-alert("jQueryが読み込まれたよ！やったね！");
-});
+// jQuery(document).ready(function(){
+// alert("jQueryが読み込まれたよ！やったね！");
+// });
 
     });
 });
